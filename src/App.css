@@ -1,0 +1,116 @@
+.logo {
+  background: url("/src/assets/logo/cool.png") no-repeat center center;
+  background-size: cover;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: none;
+
+}
+
+
+.main {
+  background: black;
+}
+
+
+nav {
+  background: transparent;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+  box-shadow: 1px 7px 10px 0px rgba(255, 255, 255, 0.205);
+  /* semi-transparent */
+  backdrop-filter: blur(3px);
+
+}
+
+
+.nav-item a {
+  color: white;
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+  color: rgb(130, 190, 229) !important;
+  border-bottom: 1px solid white;
+}
+
+/* home section */
+.section-home {
+  cursor: default;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Full background */
+.particles-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* Content on top */
+.content-layer {
+  position: relative;
+  z-index: 5;
+  height: 100%;
+  color: white;
+}
+
+.heading {
+  font-size: 6rem;
+  color: white;
+}
+
+.btns {
+  display: flex;
+  gap: 3rem;
+}
+
+/*********************** about  */
+.about_section {
+  cursor: default;
+  min-height: 100vh;
+  padding-top: 8rem;
+}
+
+.about_section p {
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+
+.profile {
+  border: none;
+  border-radius: 50%;
+  width: 30rem;
+  box-shadow: 2px 2px 19px 1px rgba(250, 248, 248, 0.37);
+}
+
+/* ********************** portfolio-section */
+.portfolio-section {
+  cursor: default;
+  /* height: 100vh; */
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.portfolio-section .heading {
+  margin-bottom: 4.5rem;
+}
+
+.card-black {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 1rem;
+}
+
+/* ******************footer_section */
+.footer_section {
+  border-top: 1px solid white;
+  padding: 4rem;
+  color: white;
+  cursor: default;
+}
