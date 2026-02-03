@@ -31,11 +31,13 @@ function Hero() {
           <TextType
             text={[
               "HTML, CSS, JavaScript",
-              "React.js & Modern UI Development",
-              // "Node.js & Express",
+              "React.js ",
+              "core java & SpringBoot",
               "MySQL & REST APIs",
               "Responsive Web Design",
+              "Java Full-stack",
               "Front-End Developer",
+              "Back-End Developer",
             ]}
             typingSpeed={75}
             pauseDuration={1500}
@@ -45,10 +47,10 @@ function Hero() {
             cursorBlinkDuration={0.5}
           />
         </div>
-        <div className="btns mt-3">
+        {/* <div className="btns mt-3">
           <Button path={"/about"} name={"About Me"} />
           <Button path={"/portfolio"} name={"Portfolio"} />
-        </div>
+        </div> */}
       </div>
     </section>
   );

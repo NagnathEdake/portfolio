@@ -3,9 +3,14 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const data = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Portfolio", path: "/portfolio" },
+    {
+      name: "Github",
+      path: "https://github.com/NagnathEdake",
+      icon: "bi bi-github",
+    },
+    // { name: "Home", path: "/" },
+    // { name: "About", path: "/about" },
+    // { name: "Portfolio", path: "/portfolio" },
   ];
   return (
     <section className="section-nav ">
@@ -15,8 +20,8 @@ function Navbar() {
             to="/"
             className="navbar-brand d-flex justify-content-center align-items-center gap-2"
           >
-            <div className="logo"></div>
-            <div className="text-white fs-4">Nagnath Edake</div>
+            {/* <div className="logo"></div> */}
+            <div className="text-white fs-4 py-2">Nagnath Edake</div>
           </Link>
           <button
             className="navbar-toggler"
@@ -38,6 +43,7 @@ function Navbar() {
                     aria-current="page"
                     to={data.path}
                   >
+                    {data.icon && <i className={`me-2 ${data.icon}`}></i>}
                     {data.name}
                   </Link>
                 </li>
