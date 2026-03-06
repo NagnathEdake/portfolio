@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import "./CSS/contact.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -10,15 +11,19 @@ import Portfolio from "./pages/Portfolio";
 import Navbar from "./layout/Navbar";
 import Footer from "./layout/Footer";
 
+import ContactUs from "./pages/ContactUs";
+
 function App() {
   return (
     <div className="main">
       <BrowserRouter>
         <Navbar />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -8,8 +8,8 @@ function Home() {
   return (
     <>
       <Hero />
-      <AboutMe />
-      <Portfolio />
+      {/* <AboutMe /> */}
+      {/* <Portfolio /> */}
     </>
   );
 }

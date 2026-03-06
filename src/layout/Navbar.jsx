@@ -1,16 +1,27 @@
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+  useUser,
+} from "@clerk/clerk-react";
 import React from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
+  const { isSignedIn } = useUser();
+
   const data = [
-    {
-      name: "Github",
-      path: "https://github.com/NagnathEdake",
-      icon: "bi bi-github",
-    },
-    // { name: "Home", path: "/" },
-    // { name: "About", path: "/about" },
-    // { name: "Portfolio", path: "/portfolio" },
+    // {
+    //   name: "Github",
+    //   path: "https://github.com/NagnathEdake",
+    //   icon: "bi bi-github",
+    //   loggedIn: true,
+    // },
+    // { name: "Home", path: "/", loggedIn: false },
+    { name: "About", path: "/about", loggedIn: true },
+    { name: "Portfolio", path: "/portfolio", loggedIn: true },
+    { name: "Contact", path: "/contact", loggedIn: true },
   ];
   return (
     <section className="section-nav ">
@@ -36,19 +47,34 @@ function Navbar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarText">
             <ul className="navbar-nav text-center ms-auto mb-2 mb-lg-0">
-              {data.map((data) => (
-                <li className="nav-item  fw-bold " key={data.name}>
-                  <Link
-                    className="nav-link  "
-                    aria-current="page"
-                    to={data.path}
-                  >
-                    {data.icon && <i className={`me-2 ${data.icon}`}></i>}
-                    {data.name}
-                  </Link>
-                </li>
-              ))}
+              {data.map((data) => {
+                if (data.loggedIn && !isSignedIn) {
+                  return null; // hide if not logged in
+                }
+                return (
+                  <li className="nav-item  fw-bold " key={data.name}>
+                    <Link
+                      className="nav-link  "
+                      aria-current="page"
+                      to={data.path}
+                    >
+                      {data.icon && <i className={`me-2 ${data.icon}`}></i>}
+                      {data.name}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
+            <SignedIn>
+              <div className="ms-3">
+                <UserButton />
+              </div>
+            </SignedIn>
+            <SignedOut>
+              <SignInButton>
+                <button className="btn btn-outline-light ms-2">Login</button>
+              </SignInButton>
+            </SignedOut>
           </div>
         </div>
       </nav>

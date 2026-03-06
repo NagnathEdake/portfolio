@@ -8,6 +8,12 @@
 
 }
 
+.center-auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
 .main {
   background: black;
@@ -47,7 +53,7 @@ nav {
 .particles-bg {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 10;
 }
 
 /* Content on top */

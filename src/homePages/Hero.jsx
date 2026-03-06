@@ -1,7 +1,6 @@
 import React from "react";
 import TextType from "../components/TextType";
 import Particles from "../components/Particles";
-import Button from "../components/Button";
 
 function Hero() {
   return (
@@ -20,7 +19,6 @@ function Hero() {
           pixelRatio={1}
         />
       </div>
-
       {/* Foreground content */}
       <div className="container content-layer d-flex flex-column text-center align-items-center justify-content-center">
         <h1 className="heading fw-bolder">Web Developer</h1>

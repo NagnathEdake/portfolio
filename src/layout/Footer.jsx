@@ -3,8 +3,8 @@ import LinkIcon from "../components/LinkIcon";
 
 function Footer() {
   return (
-    <footer className="footer_section text-center ">
-      <p className="mb-1">© {new Date().getFullYear()} Nagnath Edake</p>
+    <footer className="footer_section text-center  ">
+      <p className="mb-1">© {new Date().getFullYear()} </p>
       <p className="mb-0">
         Web Developer | React • REST-APIs • SpringBoot • MySQL
       </p>
