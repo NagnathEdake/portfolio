@@ -49,6 +49,12 @@ nav {
   overflow: hidden;
 }
 
+@media (max-width:480px) {
+  .section-home .heading {
+    font-size: 5rem;
+  }
+}
+
 /* Full background */
 .particles-bg {
   position: absolute;
@@ -81,6 +87,14 @@ nav {
   padding-top: 8rem;
 }
 
+@media (max-width:500px) {
+
+  .about_section .heading {
+    font-size: 4rem;
+  }
+
+}
+
 .about_section p {
   font-size: 1.4rem;
   line-height: 1.7;
@@ -96,10 +110,11 @@ nav {
 /* ********************** portfolio-section */
 .portfolio-section {
   cursor: default;
-  /* height: 100vh; */
+  min-height: 75vh;
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
+
 
 .portfolio-section .heading {
   margin-bottom: 4.5rem;

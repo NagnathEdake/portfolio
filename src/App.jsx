@@ -12,6 +12,7 @@ import Navbar from "./layout/Navbar";
 import Footer from "./layout/Footer";
 
 import ContactUs from "./pages/ContactUs";
+import AddProject from "./pages/AddProject";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/add" element={<AddProject />} />
         </Routes>
         <Footer />
       </BrowserRouter>

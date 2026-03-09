@@ -21,7 +21,7 @@ function Hero() {
       </div>
       {/* Foreground content */}
       <div className="container content-layer d-flex flex-column text-center align-items-center justify-content-center">
-        <h1 className="heading fw-bolder">Web Developer</h1>
+        <h1 className="heading  fw-bolder">Web Developer</h1>
 
         <div className="skill fw-bold fs-4 mt-4">Skills</div>
 
