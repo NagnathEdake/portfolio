@@ -26,8 +26,8 @@ nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.24);
   box-shadow: 1px 7px 10px 0px rgba(255, 255, 255, 0.205);
   /* semi-transparent */
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
-
 }
 
 
