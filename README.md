@@ -1,45 +1,45 @@
-# 🏋️ Fitness Web Application
+# 🌐 Portfolio Website
 
-A full-stack fitness web application that provides personalized workout programs such as muscle gain, weight loss, and yoga. The platform helps users follow structured exercise routines with detailed guidance.
+A full-stack portfolio website to showcase my projects, skills, and experience. The platform provides a clean and responsive interface along with secure authentication and integrated communication features.
 
 ---
 
-## 🚀 Features
+## 🚀 Live Demo
+🔗 
 
-- 💪 Personalized workout programs (Muscle Gain, Weight Loss, Yoga)
-- 📝 Detailed exercise instructions with sets, reps, and rest intervals
-- 🔐 User authentication and secure login system
-- 📱 Responsive user interface for all devices
-- ⚡ Smooth frontend-backend integration using REST APIs
+---
+
+## ✨ Features
+
+- 🧑‍💻 Showcase of projects and technical skills  
+- 🔐 Secure authentication system  
+- 📧 Contact/communication functionality with email integration  
+- 📱 Fully responsive design for all devices  
+- ⚡ Fast and user-friendly interface  
 
 ---
 
 ## 🛠️ Tech Stack
 
-**Frontend:**
-- React
-- HTML
-- CSS
-- Bootstrap
-
-**Backend:**
-- Spring Boot
-
-**Database:**
-- MySQL
-
-**Authentication:**
-- Clerk
-
-**Services & Tools:**
-- Git & GitHub
-- Postman
+- **Frontend:** React, HTML, CSS, Bootstrap  
+- **Backend:** Spring Boot  
+- **Database:** MySQL  
+- **Authentication:** Clerk  
+- **Services & Tools:** Brevo (Email Service), Git & GitHub, Postman  
 
 ---
 
 ## 📸 Screenshots
 
-
+_portfolio (Home, Projects, Contact, etc.)_
 
 ---
 
+## 🎯 Project Highlights
+
+- Developed a complete full-stack portfolio application  
+- Implemented authentication and email integration  
+- Designed a responsive UI for better user experience  
+- Built RESTful APIs for smooth frontend-backend communication  
+
+---
