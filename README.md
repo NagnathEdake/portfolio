@@ -2,10 +2,7 @@
 
 A full-stack portfolio website to showcase my projects, skills, and experience. The platform provides a clean and responsive interface along with secure authentication and integrated communication features.
 
----
 
-## 🚀 Live Demo
-🔗 
 
 ---
 
